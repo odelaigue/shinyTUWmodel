@@ -140,8 +140,6 @@ server <- function(input, output, session) {
     sapply(1:5, function(i) {
       updateSliderInput(session, inputId = sprintf("p%02i", i), value = getBV()$paramIni[i])
     })
-    # updateSliderInput(session, inputId = "p01", value = getBV()$paramIni[1L])
-    # updateSliderInput(session, inputId = "p02", value = getBV()$paramIni[2L])
   })
   
   
